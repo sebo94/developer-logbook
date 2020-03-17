@@ -1,0 +1,61 @@
+
+@import url('../css/fonts.css');
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*--- GENERAL STYLE ---*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*--- NAVIGATION ---*/
+
+.nav {
+    background-color: white;
+    padding: 0 2rem;
+    /* Collapse navigation */
+    height: 0rem;
+    /* Sets the height */
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    /*position: relative;*/
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
