@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blooger | Drogati Meno, Scrivi di +</title>
 
-    <!-- CUSTOM STYLE -->
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="./css/all.css">
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="./css/style.css">    
 </head>
 <body>
     <!-- NAVIGATION -->
@@ -43,10 +47,103 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>   
+            </div>
         </div>
     </nav>
 
+    <!-- MAIN -->
+    <main>
+        <!-- TITLE SECTION -->
+        <section class="site-title">
+            <div class="site-background">
+                <h3>Tours & Travels</h3>
+                <h1>Amazing Place on Earth</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section>
 
+        <!-- BLOG CAROUSEL -->
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content">
+                            <img src="./images/Blog-post/post-1.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Post title that get's clicked</h3>
+                                <button class="btn btn-blog">Click</button>
+                                <span>5 minutes read</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./images/Blog-post/post-2.jpg" alt="post-2">
+                            <div class="blog-title">
+                                <h3>Post title that get's clicked</h3>
+                                <button class="btn btn-blog">Click</button>
+                                <span>5 minutes read</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./images/Blog-post/post-3.jpg" alt="post-3">
+                            <div class="blog-title">
+                                <h3>Post title that get's clicked</h3>
+                                <button class="btn btn-blog">Click</button>
+                                <span>5 minutes read</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./images/Blog-post/post-4.png" alt="post-4">
+                            <div class="blog-title">
+                                <h3>Post title that get's clicked</h3>
+                                <button class="btn btn-blog">Click</button>
+                                <span>5 minutes read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+       
+        <!-- SITE CONTENT -->
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="./images/Blog-post/blog1.png" alt="blog-1">
+                        </div>
+                        <div class="post-info">
+                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 18, 2077</span>
+                            <span>2 Comments</span>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Why i hate dumb people</a>
+                            <p>Because they consume the resources of other people</p>
+                            <button class="btn btn-post">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <h1>Sidebar Text</h1>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Jquery LIBRARY -->
+    <script src="./js/jQuery3.4.1.min.js"></script>
+
+    <!-- OWL CAROUSEL LIBRARY -->
+    <script src="./js/owl.carousel.min.js"></script>
 
     <!-- CUSTOM JAVASCRIPT FILE -->
     <script src="./js/main.js"></script>
