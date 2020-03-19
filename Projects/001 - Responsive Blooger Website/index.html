@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
+    <!-- ANIMATE ON SCROLL (aos) -->
+    <link rel="stylesheet" href="./css/aos.css">
+
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="./css/style.css">    
 </head>
@@ -57,9 +60,9 @@
 
     <!-- MAIN -->
     <main>
-        <!-- TITLE SECTION -->
+        <!-- SITE TITLE -->
         <section class="site-title">
-            <div class="site-background">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
                 <h3>Tours & Travels</h3>
                 <h1>Amazing Place on Earth</h1>
                 <button class="btn">Explore</button>
@@ -75,7 +78,7 @@
                         <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
                     <div class="owl-carousel owl-theme blog-post">
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                             <img src="./images/Blog-post/post-1.jpg" alt="post-1">
                             <div class="blog-title">
                                 <h3>Post title that get's clicked</h3>
@@ -83,7 +86,7 @@
                                 <span>5 minutes read</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
                             <img src="./images/Blog-post/post-2.jpg" alt="post-2">
                             <div class="blog-title">
                                 <h3>Post title that get's clicked</h3>
@@ -91,7 +94,7 @@
                                 <span>5 minutes read</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
                             <img src="./images/Blog-post/post-3.jpg" alt="post-3">
                             <div class="blog-title">
                                 <h3>Post title that get's clicked</h3>
@@ -99,7 +102,7 @@
                                 <span>5 minutes read</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                             <img src="./images/Blog-post/post-4.png" alt="post-4">
                             <div class="blog-title">
                                 <h3>Post title that get's clicked</h3>
@@ -115,15 +118,18 @@
         <!-- SITE CONTENT -->
         <section class="container">
             <div class="site-content">
+                <!-- POSTS -->
                 <div class="posts">
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-image">
-                            <img src="./images/Blog-post/blog1.png" alt="blog-1">
-                        </div>
-                        <div class="post-info">
-                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 18, 2077</span>
-                            <span>2 Comments</span>
+                            <div>
+                                <img src="./images/Blog-post/blog1.png" class="img" alt="blog-1">
+                            </div>
+                            <div class="post-info">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 18, 2077</span>
+                                <span>2 Comments</span>
+                            </div>
                         </div>
                         <div class="post-title">
                             <a href="#">Why i hate dumb people</a>
@@ -131,19 +137,262 @@
                             <button class="btn btn-post">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./images/Blog-post/blog2.png" class="img" alt="blog-2">
+                            </div>
+                            <div class="post-info">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 20, 2077</span>
+                                <span>99 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Why i hate dogs</a>
+                            <p>I mean look at this it's so ugly and dirty, cats are better</p>
+                            <button class="btn btn-post">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./images/Blog-post/blog3.png" class="img" alt="blog-3">
+                            </div>
+                            <div class="post-info">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 22, 2077</span>
+                                <span>2 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">OMG cops chasing me</a>
+                            <p>Better get going</p>
+                            <button class="btn btn-post">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./images/Blog-post/blog5.jpg" class="img" alt="blog-5">
+                            </div>
+                            <div class="post-info">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 24, 2077</span>
+                                <span>0 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">I don't have time for this</a>
+                            <p>If i liked writing content i would have gone social</p>
+                            <button class="btn btn-post">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./images/Blog-post/blog4.png" class="img" alt="blog-4">
+                            </div>
+                            <div class="post-info">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 24, 2077</span>
+                                <span>0 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">I don't have time for this</a>
+                            <p>If i liked writing content i would have gone social</p>
+                            <button class="btn btn-post">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination flex-row">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="page">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
                 </div>
+                <!-- SIDEBAR -->
                 <aside class="sidebar">
-                    <h1>Sidebar Text</h1>
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-item" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">Elctronics</a>
+                                <span>(05)</span>
+                            </li>
+                            <li class="list-item" data-aos="fade-left" data-aos-delay="200">
+                                <a href="#">Physics</a>
+                                <span>(07)</span>
+                            </li>
+                            <li class="list-item" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#">Software</a>
+                                <span>(02)</span>
+                            </li>
+                            <li class="list-item" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">Business</a>
+                                <span>(08)</span>
+                            </li>
+                            <li class="list-item" data-aos="fade-left" data-aos-delay="500">
+                                <a href="#">Music</a>
+                                <span>(10)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popular-posts">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./images/popular-post/m-blog-1.jpg" class="img" alt="popular-1">
+                                </div>
+                                <div class="post-info">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 22, 2077</span>
+                                    <span>2 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Read this and a couple of other words so i can make this line wrap</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./images/popular-post/m-blog-2.jpg" class="img" alt="popular-2">
+                                </div>
+                                <div class="post-info">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 22, 2077</span>
+                                    <span>2 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Read this and a couple of other words so i can make this line wrap</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./images/popular-post/m-blog-3.jpg" class="img" alt="popular-3">
+                                </div>
+                                <div class="post-info">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 22, 2077</span>
+                                    <span>2 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Read this and a couple of other words so i can make this line wrap</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./images/popular-post/m-blog-4.jpg" class="img" alt="popular-4">
+                                </div>
+                                <div class="post-info">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 22, 2077</span>
+                                    <span>2 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Read this and a couple of other words so i can make this line wrap</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./images/popular-post/m-blog-5.jpg" class="img" alt="popular-5">
+                                </div>
+                                <div class="post-info">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 22, 2077</span>
+                                    <span>2 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Read this and a couple of other words so i can make this line wrap</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Newsletter</h2>
+                        <div class="form-element">
+                            <input type="text" class="newsletter-input" placeholder="Email">
+                            <button class="btn btn-form">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">Technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">Music</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">Design</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="500">Business</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="600">Love</span>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, eveniet.</p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email">
+                    <span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./images/instagram/thumb-card3.png" alt="insta-1">
+                    <img src="./images/instagram/thumb-card4.png" alt="insta-2">
+                    <img src="./images/instagram/thumb-card5.png" alt="insta-3">
+                </div>
+                <div class="flex-row">
+                    <img src="./images/instagram/thumb-card6.png" alt="insta-4">
+                    <img src="./images/instagram/thumb-card7.png" alt="insta-5">
+                    <img src="./images/instagram/thumb-card8.png" alt="insta-6">
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow</h2>
+                <p>Don't follow me here</p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">Made by weird bipeds inhabiting planet Earth | Do not obey</h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
 
     <!-- Jquery LIBRARY -->
     <script src="./js/jQuery3.4.1.min.js"></script>
 
     <!-- OWL CAROUSEL LIBRARY -->
     <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ANIMATE ON SCROLL (aos) -->
+    <script src="./js/aos.js"></script>
 
     <!-- CUSTOM JAVASCRIPT FILE -->
     <script src="./js/main.js"></script>
