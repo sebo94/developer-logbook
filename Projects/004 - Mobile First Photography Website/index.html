@@ -3,156 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FLEXBOX GRID LIBRARY -->
-    <link rel="stylesheet" href="./css/flexboxgrid.min.css">
-    <!-- CUSTOM CSS STYLE -->
+    <!-- Custom CSS style -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- MATERIAL DESIGN ICONS (F**K FONT AWESOME) -->
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css">
-    <title>Doctor Theme | Home</title>
+    <title>Kapta Photography | Home</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header id="main-header">
-        <div class="container">
-            <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
-                <!-- BRAND -->
-                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                    <h1><span class="primary-text">Doctor</span> Theme</h1>
-                </div>
-                <!-- NAVIGATION -->
-                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-                    <nav id="navbar">
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </nav>
+    <!-- Not having any header or navigation so we use main -->
+    <main>
+        <!-- LANDING AREA -->
+        <div id="landing">
+            <!-- LANDING TEXT -->
+            <div id="landing-text">    
+                <div id="landing-text-inner">
+                    <h1>Kapa Photography</h1>
+                    <h2>Beautiful Tech Photography</h2>
+                    <a href="#images" class="btn" id="view-work">View Work</a>
                 </div>
             </div>
+            <!-- LANDING IMAGE -->
+            <div id="landing-image"></div>
         </div>
-    </header>
-    
-    <!-- SHOWCASE -->
-    <section id="showcase">
-        <div class="container">
-            <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7 showcase-content">
-                    <h1>Welcome To <span class="primary-text">Doctor Theme</span></h1>
-                    <p>A responsive template built with HTML5, CSS3 and Flexboxgrid</p>
-                </div>
+        <div id="images">
+            <div id="header">
+                <h2>Our Work</h2>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="">
+            <div class="caption">
+                <h3>Photo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="">
+            <div class="caption">
+                <h3>Photo 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,flowers" alt="">
+            <div class="caption">
+                <h3>Photo 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,animals" alt="">
+            <div class="caption">
+                <h3>Photo 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,clouds" alt="">
+            <div class="caption">
+                <h3>Photo 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis.</p>
             </div>
         </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features">
-        <div class="container">
-            <div class="row center-xs center-sm center-md center-lg">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h2>Core Features</h2>
-                    <p>What's included</p>
-                    <!-- ICON ROW 1 -->
-                    <div class="row center-xs center-sm center-md center-lg">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <span class="mdi mdi-emoticon-wink-outline"></span>
-                            <h4>Fully Optimize</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nisi.</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <span class="mdi mdi-human-male-child"></span>
-                            <h4>Free Support</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nisi.</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <span class="mdi mdi-rocket-outline"></span>
-                            <h4>Free Updates</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nisi.</p>
-                        </div>
-                    </div>
-                    <!-- ICON ROW 2 -->
-                    <div class="row center-xs center-sm center-md center-lg">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <span class="mdi mdi-security"></span>
-                            <h4>UpTime Guarantee</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nisi.</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <span class="mdi mdi-account-plus"></span>
-                            <h4>Multi User</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nisi.</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <span class="mdi mdi-play-speed"></span>
-                            <h4>Plug & Play</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nisi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- INFO -->
-    <section id="info">
-        <div class="container">
-            <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <img src="./img/iphone.png" alt="iPhone">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <h2>Core Features</h2>
-                    <ul>
-                        <li><span class="mdi mdi-check"></span> Fully Optimized</li>
-                        <li><span class="mdi mdi-check"></span> Free Support</li>
-                        <li><span class="mdi mdi-check"></span> Free Upgrades</li>
-                        <li><span class="mdi mdi-check"></span> UpTime Guarantee</li>
-                        <li><span class="mdi mdi-check"></span> Mulitple Users</li>
-                        <li><span class="mdi mdi-check"></span> Plug & Play</li>
-                      </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- COMPANY -->
-    <section id="company">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <h4>Contact Us</h4>
-                    <ul>
-                      <li><span class="mdi mdi-cellphone"></span> 800.800.800</li>
-                      <li><span class="mdi mdi-email"></span> support@doctortheme.it</li>
-                      <li><span class="mdi mdi-home-map-marker"></span> 400 Main st, Boston MA</li>
-                    </ul>
-                  </div>
-                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <h4>About Us</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <h4>Newsletter</h4>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <form>
-                      <input type="email" name="email" placeholder="Enter Email">
-                      <button type="submit" name="button">Submit</button>
-                    </form>
-                  </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- FOOTER -->
-    <footer id="main-footer">
-        <div class="container">
-            <div class="row center-xs center-sm center-md center-lg">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <p>Copyright &copy; 2020 | Doctor Theme</p>
-                </div>
-              </div>
-        </div>
+    <footer>
+        <h3>Get In Touch</h3>
+        <p>Email or call us to set up a consult</p>
+        <p>Email: <strong>soundsofkapta@gmail.com</strong></p>
+        <p>Phone: <strong>(+39) 3913481471</strong></p>
     </footer>
 
+    <!-- jQuery Library CDN -->
+    <script
+		src="http://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Custom Javascript File -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
