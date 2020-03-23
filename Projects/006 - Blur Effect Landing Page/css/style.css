@@ -1,0 +1,39 @@
+body {
+	background: rgba(0, 0, 0, .9);
+	margin: 0;
+	color: white;
+	font-size: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#showcase::after {
+	content: '';
+	height: 100vh;
+	width: 100%;
+	background: url('/img/showcase.jpg') no-repeat center;
+	background-size: cover;
+	display: block;
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	transition: all 1s;
+}
+
+#showcase:hover::after {
+	filter: blur(0);
+	-webkit-filter: blur(0);
+}
+
+.showcase-content {
+	position: absolute;
+	
+}
+
+#logo {
+	height: 180px;
+	width: 180px;
+}
+
+.showcase-content .title {
+
+}
+
+.content .text
