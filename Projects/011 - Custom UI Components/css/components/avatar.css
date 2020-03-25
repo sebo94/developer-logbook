@@ -1,0 +1,11 @@
+.avatar {
+    /* Make it a circle */
+    border-radius: 50%;
+    /* Set a custom size for your avatar */
+    width: 50px;
+}
+
+.avatar-small {
+    border-radius: 50%;
+    width: 25px;
+}
