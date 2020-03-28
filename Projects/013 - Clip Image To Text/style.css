@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-size: 22em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-image: url(./img.jpg);
+  background-clip: text;
+  color: transparent;
+}
