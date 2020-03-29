@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Only Lightbox</title>
+
+    <!-- Custom CSS Style -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="portfolio">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio__item">
+        <img src="./img/4k-desktop-backgrounds.jpg" alt="artwork1" />
+        <div class="portfolio__desc">
+          <h3 class="portfolio__title">This is the title</h3>
+          <a href="#portfolio-item-1" class="btn">More Info</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio__item">
+        <img src="./img/orig.jpg" alt="artwork2" />
+        <div class="portfolio__desc">
+          <h3 class="portfolio__title">This is the title</h3>
+          <a href="#portfolio-item-2" class="btn">More Info</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio__item">
+        <img
+          src="./img/Justin-Maller-Wallpaper-1920x1080-PIC-WPXH317209.jpg"
+          alt="artwork3"
+        />
+        <div class="portfolio__desc">
+          <h3 class="portfolio__title">This is the title</h3>
+          <a href="#portfolio-item-3" class="btn">More Info</a>
+        </div>
+      </div>
+    </div>
+    <!-- PORTFOLIO LIGHTBOXES -->
+    <div class="portfolio-lightboxes">
+      <!-- Portfolio Lightbox 1 -->
+      <div id="portfolio-item-1" class="portfolio-lightbox">
+        <div class="portfolio-lightbox__content">
+          <a href="#portfolio" class="close"></a>
+          <img src="./img/4k-desktop-backgrounds.jpg" alt="artwork1" />
+          <h3 class="portfolio-lightbox__title">Title inside the lightbox</h3>
+          <p class="portfolio-lightbox__body">Content inside the lightbox</p>
+        </div>
+      </div>
+      <!-- Portfolio Lightbox 2 -->
+      <div id="portfolio-item-2" class="portfolio-lightbox">
+        <div class="portfolio-lightbox__content">
+          <a href="#portfolio" class="close"></a>
+          <img src="./img/orig.jpg" alt="artwork1" />
+          <h3 class="portfolio-lightbox__title">Title inside the lightbox</h3>
+          <p class="portfolio-lightbox__body">Content inside the lightbox</p>
+        </div>
+      </div>
+      <!-- Portfolio Lightbox 3 -->
+      <div id="portfolio-item-3" class="portfolio-lightbox">
+        <div class="portfolio-lightbox__content">
+          <a href="#portfolio" class="close"></a>
+          <img
+            src="./img/Justin-Maller-Wallpaper-1920x1080-PIC-WPXH317209.jpg"
+            alt="artwork1"
+          />
+          <h3 class="portfolio-lightbox__title">Title inside the lightbox</h3>
+          <p class="portfolio-lightbox__body">Content inside the lightbox</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
