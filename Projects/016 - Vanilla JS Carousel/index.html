@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Carousel</title>
+
+    <!-- Font Awesome Library -->
+    <script
+      src="https://kit.fontawesome.com/a95ec8c3c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS Style -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="carousel">
+      <button class="carousel__btn carousel__btn--left">
+        <i class="fas fa-chevron-left carousel__icon fa-2x"></i>
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide">
+            <img class="carousel__img" src="./img/carousel-1.jpg" alt="" />
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__img" src="./img/carousel-2.jpg" alt="" />
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__img" src="./img/carousel-3.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__btn carousel__btn--right">
+        <i class="fas fa-chevron-right carousel__icon fa-2x"></i>
+      </button>
+
+      <div class="carousel__nav">
+        <button class="carousel__indicator current"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+  </body>
+</html>
