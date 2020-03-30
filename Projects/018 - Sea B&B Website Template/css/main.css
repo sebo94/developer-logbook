@@ -7,18 +7,59 @@ body {
   box-sizing: border-box;
 }
 
-.logo {
+.flex-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --- HEADER --- */
+header {
+  background: rgba(255, 234, 218, 1);
+  height: 25vh;
+  margin-top: 70px;
+}
+
+#header__logo {
   background: url(/img/logo_150.png);
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-position: center;
+  margin-top: 8px;
 }
 
+#header__navbar .navbar {
+  display: flex;
+}
 
+#header__navbar .navbar .nav-item {
+  background: rgb(255,248,243);
+  padding: 10px 20px;
+  border-left: 1px solid rgba(130, 126, 122, 1);
+  width: 10vw;
+  text-align: center;
+}
 
-
-
+#header__navbar .navbar .nav-item .nav-item-link {
+  font: normal normal bold 28px/1.4em 'Mr De Haviland',cursive;
+  color: #565451;
+  font-size: 18px;
+  white-space: nowrap;
+  font-weight: 100;
+}
 
 
 
