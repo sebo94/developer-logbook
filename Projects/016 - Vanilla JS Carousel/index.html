@@ -15,12 +15,14 @@
   </head>
   <body>
     <div class="carousel">
-      <button class="carousel__btn carousel__btn--left">
-        <i class="fas fa-chevron-left carousel__icon fa-2x"></i>
+      <!-- BUTTON PREVIOUS -->
+      <button class="carousel__btn carousel__btn--left is-hidden">
+        <i class="fas fa-chevron-left fa-2x carousel__icon"></i>
       </button>
+      <!-- TRACK CONTAINER -->
       <div class="carousel__track-container">
         <ul class="carousel__track">
-          <li class="carousel__slide">
+          <li class="carousel__slide current">
             <img class="carousel__img" src="./img/carousel-1.jpg" alt="" />
           </li>
           <li class="carousel__slide">
@@ -31,8 +33,9 @@
           </li>
         </ul>
       </div>
+      <!-- BUTTON NEXT -->
       <button class="carousel__btn carousel__btn--right">
-        <i class="fas fa-chevron-right carousel__icon fa-2x"></i>
+        <i class="fas fa-chevron-right fa-2x carousel__icon"></i>
       </button>
 
       <div class="carousel__nav">
@@ -41,5 +44,6 @@
         <button class="carousel__indicator"></button>
       </div>
     </div>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>
