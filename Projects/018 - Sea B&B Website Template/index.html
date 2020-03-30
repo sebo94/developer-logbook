@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Carousel</title>
+
+    <!-- Custom CSS Style -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="flex-container" id="header__navbar">
+        <!-- LOGO -->
+        <div id="header__logo">
+          <img src="./img/logo_150.png" alt="B&B logo" />
+        </div>
+        <!-- NAVIGATION -->
+        <ul class="navbar">
+          <li class="nav-item"><a href="#" class="nav-item-link">Home</a></li>
+          <li class="nav-item">
+            <a href="rooms.html" class="nav-item-link">Rooms & rates</a>
+          </li>
+          <li class="nav-item">
+            <a href="activities.html" class="nav-item-link">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutUs.html" class="nav-item-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-item-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current">
+            <img
+              class="carousel__img"
+              src="./img/carousel-1.png"
+              alt="hotel outside"
+            />
+          </li>
+          <li class="carousel__slide">
+            <img
+              class="carousel__img"
+              src="./img/carousel-2.png"
+              alt="hotel inside"
+            />
+          </li>
+          <li class="carousel__slide">
+            <img
+              class="carousel__img"
+              src="./img/carousel-3.png"
+              alt="person relax"
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- CAROUSEL NAVIGATION -->
+      <div class="carousel__nav">
+        <button class="carousel__indicator current"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section id="main__section">
+        <div class="flex-container">
+          <ul id="main__cards">
+            <!-- CARD 1 -->
+            <li class="main__card">
+              <h3 class="card__title">Rooms & rates</h3>
+              <img src="./img/carousel-1.png" alt="" />
+              <p class="card__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
+                corrupti sapiente molestias itaque?
+              </p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
+                corrupti sapiente molestias itaque?
+              </p>
+              <a href="rooms.html" class="card__btn btn">More Info</a>
+            </li>
+            <!-- CARD 2 -->
+            <li class="main__card">
+              <h3 class="card__title">Location</h3>
+              <img src="./img/carousel-2.png" alt="" />
+              <p class="card__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
+                corrupti sapiente molestias itaque?
+              </p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
+                corrupti sapiente molestias itaque?
+              </p>
+              <a href="contact.html" class="card__btn btn">More Info</a>
+            </li>
+            <!-- CARD 3 -->
+            <li class="main__card">
+              <h3 class="card__title">Activities</h3>
+              <img src="./img/carousel-3.png" alt="" />
+              <p class="card__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
+                corrupti sapiente molestias itaque?
+              </p>
+              <a href="activities.html" class="card__btn btn">More Info</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="flex-container">
+        <div id="footer-info">
+          <h4>Call us now to book:</h4>
+          <p>1-800-000-000</p>
+          <p class="copyright">
+            &copy; 2020 by SEA B&B. Remade by Kapta from 
+            <a href="https://wix.com" target="_blank">Wix.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/carousel.js"></script>
+  </body>
+</html>
