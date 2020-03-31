@@ -30,6 +30,7 @@ header {
   background: rgba(255, 234, 218, 1);
   height: 25vh;
   margin-top: 70px;
+  position: relative;
 }
 
 #header__logo {
@@ -38,64 +39,43 @@ header {
   height: 100px;
   border-radius: 50%;
   background-position: center;
-  margin-top: 8px;
+  position: absolute;
+  left: 13vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 #header__navbar .navbar {
   display: flex;
+  position: absolute;
+  left: 20vw;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
 }
 
 #header__navbar .navbar .nav-item {
-  background: rgb(255,248,243);
-  padding: 10px 20px;
+  background: rgb(255, 248, 243);
+  padding: 8px 15px;
   border-left: 1px solid rgba(130, 126, 122, 1);
-  width: 10vw;
+  width: 11vw;
   text-align: center;
 }
 
 #header__navbar .navbar .nav-item .nav-item-link {
-  font: normal normal bold 28px/1.4em 'Mr De Haviland',cursive;
+  font: normal normal bold 28px/1.4em "Mr De Haviland", cursive;
   color: #565451;
   font-size: 18px;
   white-space: nowrap;
   font-weight: 100;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- CAROUSEL --- */
 .carousel {
-  position: relative;
+  /* position: relative; */
   height: 400px;
-  width: 50%;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -113,9 +93,6 @@ header {
 }
 
 .carousel__track {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   position: relative;
   height: 100%;
   transition: transform 250ms ease-in;
@@ -125,29 +102,7 @@ header {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
-}
-
-.carousel__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.carousel__btn--left {
-  left: -40px;
-}
-
-.carousel__btn--right {
-  right: -40px;
-}
-
-.carousel__icon {
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
 }
 
 .carousel__nav {
@@ -155,6 +110,10 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .carousel__indicator {
@@ -162,7 +121,7 @@ header {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
   margin: 0 10px;
   cursor: pointer;
 }
@@ -171,6 +130,26 @@ header {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.is-hidden {
-  display: none;
+/* MEDIA QUERIES */
+@media (max-width: 920px) {
+  #header__logo {
+    display: none;
+  }
+
+  #header__navbar .navbar {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    left: auto;
+  }
+
+  #header__navbar .navbar .nav-item {
+    width: 100%;
+  }
+
+  #header__navbar .navbar .nav-item .nav-item-link {
+    width: 100%;
+  }
 }
+
+
