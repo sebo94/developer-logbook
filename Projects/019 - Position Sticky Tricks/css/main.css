@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-img {
+  background: url("../bg.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 400px;
+  display: grid;
+  place-items: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #888;
+  /* Now the navigation sticks! */
+  position: sticky;
+  top: 0;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigation .nav-item {
+  color: #eee;
+  padding: 10px 30px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.content {
+  padding-top: 3em;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.content p {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* --- ABOUT --- */
+.about-content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  display: grid;
+  /* Shorthand */
+  grid: auto / 200px 1fr;
+  grid-gap: 0 2em;
+}
+
+section p {
+  grid-column: 2 / 3;
+}
+
+.section-title {
+  grid-column: 1 / 2;
+  text-align: right;
+  align-self: start;
+  top: 1em;
+  position: sticky;
+  top: 1em;
+}
+
+/* --- CONTACT --- */
+
+.box {
+  width: 70%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.box-content {
+  background: white;
+  padding: 2em;
+}
+
+.hello-there {
+  position: sticky;
+  bottom: 100px;
+  z-index: -1;
+  background: red;
+  padding: 1em;
+  margin: 0 auto;
+  width: 75%;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
