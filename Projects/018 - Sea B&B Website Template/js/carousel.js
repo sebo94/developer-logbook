@@ -22,7 +22,7 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
   updateCurrentSlide(currentSlide, targetSlide);
 };
 
-// Auto move to next slide
+// Attemp to auto move to next slide
 const autoLoop = () => {
   const currentSlide = track.querySelector(".current");
   const currentIndex = slides.indexOf(currentSlide);
@@ -46,7 +46,7 @@ const autoLoop = () => {
 // Auto loop
 window.setInterval(function() {
   autoLoop();
-}, 2000);
+}, 2500);
 
 
 // Update indicators

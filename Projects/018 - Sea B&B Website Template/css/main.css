@@ -1,18 +1,20 @@
 /* DEMO PURPOSES : NO FILE STRUCTURE */
 
+@import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+
 /* --- General Styling --- */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .flex-container {
   width: 75%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 ul {
@@ -25,11 +27,22 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(86, 84, 81);
+  color: rgb(243, 243, 243);
+}
+
 /* --- HEADER --- */
+header .flex-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
 header {
   background: rgba(255, 234, 218, 1);
   height: 25vh;
-  margin-top: 70px;
   position: relative;
 }
 
@@ -57,24 +70,38 @@ header {
 
 #header__navbar .navbar .nav-item {
   background: rgb(255, 248, 243);
-  padding: 8px 15px;
+  padding: 0 15px;
   border-left: 1px solid rgba(130, 126, 122, 1);
   width: 11vw;
   text-align: center;
+  white-space: nowrap;
+  transition: background-color 400ms ease;
+}
+
+#header__navbar .navbar .nav-item:not(.current):hover {
+  background-color: rgba(100, 100, 100, 0.8);
+}
+
+#header__navbar .current {
+  background-color: rgb(210, 213, 216) !important;
 }
 
 #header__navbar .navbar .nav-item .nav-item-link {
   font: normal normal bold 28px/1.4em "Mr De Haviland", cursive;
   color: #565451;
-  font-size: 18px;
-  white-space: nowrap;
-  font-weight: 100;
+  display: inline-block;
+  width: 100%;
+  transition: color 400ms ease;
+}
+
+#header__navbar .navbar .nav-item .nav-item-link:not(.current):hover {
+  color: white;
 }
 
 /* --- CAROUSEL --- */
 .carousel {
   /* position: relative; */
-  height: 400px;
+  height: 100vh;
   width: 100vw;
   margin: 0 auto;
 }
@@ -86,7 +113,6 @@ header {
 }
 
 .carousel__track-container {
-  background: lightgreen;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -95,7 +121,7 @@ header {
 .carousel__track {
   position: relative;
   height: 100%;
-  transition: transform 250ms ease-in;
+  transition: transform 500ms ease-in-out;
 }
 
 .carousel__slide {
@@ -111,7 +137,7 @@ header {
   align-items: center;
   padding: 10px 0;
   position: absolute;
-  bottom: -40px;
+  bottom: -8.5em;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -130,7 +156,141 @@ header {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* MEDIA QUERIES */
+/* --- MAIN-CONTENT --- */
+#main__section {
+  background: rgb(213, 211, 209);
+  height: 90vh;
+}
+
+#main__cards-list {
+  height: 100%;
+  width: 100%;
+}
+
+#main__section .flex-container {
+  justify-content: center;
+  align-items: center;
+}
+
+#main__section .main__card {
+  background: white;
+  height: 80%;
+  margin: 0 8px;
+  width: 25%;
+}
+
+#main__section .main__card.flex-container {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#main__section img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+#main__section .main__card .card__title {
+  font-family: "Mr De Haviland", cursive;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #2b2a28;
+  margin-top: 0.4em;
+}
+
+#main__section .main__card .card__text {
+  text-align: center;
+  padding: 0.1em 2.9em;
+  color: #2b2a28;
+  font-weight: 500;
+  font-size: 0.85em;
+  line-height: 1.4em;
+  font: normal normal normal 13px/1.4em Signika, sans-serif;
+}
+
+#main__section .main__card .card__btn {
+  padding: 0.65em 1.4em;
+  font: normal normal normal 13px/1.4em Signika, sans-serif;
+  margin-bottom: 1.6em;
+  background-color: rgba(86, 84, 81, 1);
+  border: solid rgba(153, 153, 153, 1) 1px;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s, color 0.4s ease 0s;
+}
+
+#main__section .main__card .card__btn:hover {
+  background-color: rgba(213, 211, 209, 1);
+  border-color: rgba(102, 102, 102, 1);
+  color: #333333;
+
+}
+
+/* --- FOOTER --- */
+#footer {
+  background-color: rgb(153, 159, 166);
+  color: white;
+  height: 215px;
+}
+
+#footer .flex-container {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#footer__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#footer__info h4,
+.footer__telephone {
+  font-family: Signika;
+  font-size: 29px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+#footer .copyright {
+  font: normal normal normal 12px/1.4em Signika, sans-serif;
+}
+
+#footer .copyright a {
+  color: white;
+}
+
+#footer__social {
+  margin-top: 80px;
+  font: normal normal normal 12px/1.4em Signika, sans-serif;
+  margin-left: 40px;
+}
+
+#footer__social p {
+  margin-bottom: 80px;
+  font-size: 15px;
+}
+
+#footer__social i {
+  padding: 5px;
+}
+
+#footer__gmaps {
+  background: url(../img/gmaps.png);
+  background-size: cover;
+  height: 70%;
+  width: 35%;
+}
+
+/* --- MEDIA QUERIES --- */
 @media (max-width: 920px) {
   #header__logo {
     display: none;
@@ -151,5 +311,3 @@ header {
     width: 100%;
   }
 }
-
-

@@ -6,7 +6,10 @@
     <title>B&B Hotel | Home</title>
 
     <!-- Font Awesome Library -->
-    <script src="https://kit.fontawesome.com/a95ec8c3c2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a95ec8c3c2.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom CSS Style -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -16,21 +19,20 @@
     <header id="header">
       <div class="flex-container" id="header__navbar">
         <!-- LOGO -->
-        <div id="header__logo">
-        </div>
+        <div id="header__logo"></div>
         <!-- NAVIGATION -->
         <ul class="navbar">
-          <li class="nav-item">
-            <a href="#" class="nav-item-link">Home</a>
+          <li class="nav-item current">
+            <a href="#" class="nav-item-link current">Home</a>
           </li>
           <li class="nav-item">
-            <a href="rooms.html" class="nav-item-link">Rooms & rates</a>
+            <a href="rooms.html" class="nav-item-link">Rooms & Rates</a>
           </li>
           <li class="nav-item">
             <a href="activities.html" class="nav-item-link">Activities</a>
           </li>
           <li class="nav-item">
-            <a href="aboutUs.html" class="nav-item-link">About us</a>
+            <a href="aboutUs.html" class="nav-item-link">About Us</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-item-link">Contact</a>
@@ -76,51 +78,40 @@
     <!-- MAIN CONTENT -->
     <main>
       <section id="main__section">
-        <div class="flex-container">
-          <ul id="main__cards">
-            <!-- CARD 1 -->
-            <li class="main__card">
-              <h3 class="card__title">Rooms & rates</h3>
-              <img src="./img/carousel-1.png" alt="" />
-              <p class="card__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
-                corrupti sapiente molestias itaque?
-              </p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
-                corrupti sapiente molestias itaque?
-              </p>
-              <a href="rooms.html" class="card__btn btn">More Info</a>
-            </li>
-            <!-- CARD 2 -->
-            <li class="main__card">
-              <h3 class="card__title">Location</h3>
-              <img src="./img/carousel-2.png" alt="" />
-              <p class="card__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
-                corrupti sapiente molestias itaque?
-              </p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
-                corrupti sapiente molestias itaque?
-              </p>
-              <a href="contact.html" class="card__btn btn">More Info</a>
-            </li>
-            <!-- CARD 3 -->
-            <li class="main__card">
-              <h3 class="card__title">Activities</h3>
-              <img src="./img/carousel-3.png" alt="" />
-              <p class="card__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                voluptatem suscipit cum temporibus pariatur, voluptatum veniam
-                corrupti sapiente molestias itaque?
-              </p>
-              <a href="activities.html" class="card__btn btn">More Info</a>
-            </li>
-          </ul>
-        </div>
+        <ul id="main__cards-list" class="flex-container">
+          <!-- CARD 1 -->
+          <li class="main__card flex-container">
+            <h3 class="card__title">Rooms & Rates</h3>
+            <img src="./img/carousel-1.png" alt="" />
+            <p class="card__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              voluptatem suscipit cum temporibus pariatur, voluptatum itaque?
+            </p>
+            <a href="rooms.html" class="card__btn btn">More Info</a>
+          </li>
+
+          <!-- CARD 2 -->
+          <li class="main__card flex-container">
+            <h3 class="card__title">Location</h3>
+            <img src="./img/carousel-2.png" alt="" />
+            <p class="card__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              voluptatem suscipit cum temporibus pariatur, voluptatum itaque?
+            </p>
+            <a href="contact.html" class="card__btn btn">More Info</a>
+          </li>
+
+          <!-- CARD 3 -->
+          <li class="main__card flex-container">
+            <h3 class="card__title">Activities</h3>
+            <img src="./img/carousel-3.png" alt="" />
+            <p class="card__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              voluptatem suscipit cum temporibus pariatur, voluptatum itaque?
+            </p>
+            <a href="activities.html" class="card__btn btn">More Info</a>
+          </li>
+        </ul>
       </section>
     </main>
 
@@ -128,20 +119,26 @@
     <footer id="footer">
       <div class="flex-container">
         <div id="footer__info">
-          <h4>Call us now to book:</h4>
-          <p>1-800-000-000</p>
+          <div>
+            <h4>Call us now to book:</h4>
+            <p class="footer__telephone"><strong> 1-800-000-000</strong></p>
+          </div>
           <p class="copyright">
-            &copy; 2020 by SEA B&B. Remade by Kapta from 
+            &copy; 2020 by SEA B&B. Remade by Kapta from
             <a href="https://wix.com" target="_blank">Wix.com</a>
           </p>
         </div>
         <div id="footer__social">
-          <p>Follow us:</p>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
+          <p>
+            Follow us: 
+            <i class="fab fa-facebook-f fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+          </p>
         </div>
+
         <div id="footer__gmaps">
-          <!-- Implement Gmaps position element (later) -->
+          <!-- Run into some weird errors while trying to implement gmap api -->
+          <!-- I'm just gonna stick an image as placeholder and go on -->
         </div>
       </div>
     </footer>
