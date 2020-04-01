@@ -215,14 +215,14 @@ header {
   margin-bottom: 1.6em;
   background-color: rgba(86, 84, 81, 1);
   border: solid rgba(153, 153, 153, 1) 1px;
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s, color 0.4s ease 0s;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s,
+    color 0.4s ease 0s;
 }
 
 #main__section .main__card .card__btn:hover {
   background-color: rgba(213, 211, 209, 1);
   border-color: rgba(102, 102, 102, 1);
   color: #333333;
-
 }
 
 /* --- FOOTER --- */
@@ -288,6 +288,121 @@ p {
   background-size: cover;
   height: 70%;
   width: 35%;
+}
+
+/* --- ROOMS --- */
+#rooms__bg-image {
+  background: url(../img/rooms-1.png);
+  background-size: cover;
+  background-position-y: bottom;
+  height: 306px;
+}
+
+#rooms__container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#rooms__header {
+  margin-bottom: 40px;
+}
+
+#rooms__header h3 {
+  margin: 0;
+  padding: 20px 0;
+  font-family: "Mr De Haviland", cursive;
+  font-size: 4em;
+  font-weight: 400;
+  color: #444a51;
+}
+
+#rooms__header p {
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  line-height: 1.5em;
+  font-family: Signika, sans-serif;
+}
+
+/* --- ROOMS_CARDS --- */
+main.rooms #main__cards-list {
+  flex-direction: column;
+}
+
+main.rooms #main__section {
+  height: auto;
+}
+
+main.rooms #main__cards-list .main__card {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+main.rooms #main__cards-list .main__card.flex-container {
+  flex-direction: row;
+}
+
+main.rooms #main__cards-list .main__card img {
+  width: 51%;
+}
+
+main.rooms #main__cards-list .card__body {
+  padding: 0 20px;
+  position: relative;
+}
+
+main.rooms #main__cards-list .card__body p {
+  text-align: initial;
+}
+
+main.rooms #main__cards-list .card__body .btn {
+  position: absolute;
+  bottom: -45px;
+  right: 15px;
+  padding: 0.75em 2.3em;
+}
+
+main.rooms #main__cards-list .card__body .card__title {
+  margin-top: -20px;
+  font-size: 40px;
+}
+
+main.rooms #main__cards-list .card__body .card__header {
+  font: normal normal normal 16px/1.4em Signika, sans-serif;
+  line-height: 1.4em;
+  color: #2b2a28;
+  padding-bottom: 20px;
+}
+
+main.rooms #main__cards-list .card__body .card__text {
+  padding: 0;
+}
+
+main.rooms #main__cards-list .card__body .card__text p.pricing {
+  margin-top: 20px;
+}
+
+/* --- ACTIVITIES --- */
+#activities__bg-image {
+  background: url(../img/activities.png);
+  background-size: cover;
+  background-position-y: -125px;
+  height: 306px;
+}
+
+#activities__grid {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#activities__grid .activity {
+  width: 300px;
+  height: 300px;
+  background-color: red;
 }
 
 /* --- MEDIA QUERIES --- */
