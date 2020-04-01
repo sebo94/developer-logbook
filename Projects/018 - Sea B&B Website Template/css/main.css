@@ -400,9 +400,30 @@ main.rooms #main__cards-list .card__body .card__text p.pricing {
 }
 
 #activities__grid .activity {
-  width: 300px;
-  height: 300px;
-  background-color: red;
+  width: 286px;
+  height: 248px;
+  background-color: rgb(153,159,166);
+  color: white;
+}
+
+#activities__grid .activity .activity__img img {
+  width: 100%;
+  height: 100%;
+}
+
+#activities__grid .activity .activity__img {
+  height: 70%;
+}
+
+#activities__grid .activity h3.activity__title, p.activity__description {
+  margin: 0;
+  padding: 5px;
+  font: normal normal normal 25px/1.4em Signika,sans-serif;
+}
+
+#activities__grid p.activity__description {
+  font-size: 12px;
+  padding-bottom: 100px;
 }
 
 /* --- MEDIA QUERIES --- */
