@@ -10,18 +10,46 @@ const setSlidePosition = (slide, index) => {
 };
 slides.forEach(setSlidePosition);
 
-const moveToSlide = (track, currentSlide, targetSlide) => {
-  track.style.transform = "translateX(-" + targetSlide.style.left + ")";
+// Update current slide
+const updateCurrentSlide = (currentSlide, targetSlide) => {
   currentSlide.classList.remove("current");
   targetSlide.classList.add("current");
 };
 
-window.setInterval(function(){
-  const currentSlide = track.querySelector(".current");
-  const targetSlide = currentSlide.nextElementSibling;
-  moveToSlide(currentSlide, targetSlide);
-}, 3000);
+// Move to specific slide
+const moveToSlide = (track, currentSlide, targetSlide) => {
+  track.style.transform = "translateX(-" + targetSlide.style.left + ")";
+  updateCurrentSlide(currentSlide, targetSlide);
+};
 
+// Auto move to next slide
+const autoLoop = () => {
+  const currentSlide = track.querySelector(".current");
+  const currentIndex = slides.indexOf(currentSlide);
+  // If we are not at the end of the slides, move to the next slide
+  if (currentIndex < slides.length - 1) {
+    const targetSlide = currentSlide.nextElementSibling;
+    moveToSlide(track, currentSlide, targetSlide);
+    const currentIndicator = navigator.querySelector(".current");
+    const nextIndicator = currentIndicator.nextElementSibling;
+    updateIndicators(currentIndicator, nextIndicator);
+  } else {
+    // Otherwise, go back to the beginning
+    const targetSlide = slides[0];
+    moveToSlide(track, currentSlide, targetSlide);
+    const currentIndicator = navigator.querySelector(".current");
+    const nextIndicator = indicators[0];
+    updateIndicators(currentIndicator, nextIndicator);
+  }
+};
+
+// Auto loop
+window.setInterval(function() {
+  autoLoop();
+}, 2000);
+
+
+// Update indicators
 const updateIndicators = (currentIndicator, targetIndicator) => {
   currentIndicator.classList.remove("current");
   targetIndicator.classList.add("current");
