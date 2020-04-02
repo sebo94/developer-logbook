@@ -43,11 +43,13 @@ html, body {
   z-index: -1;
   transform: scaleX(0.1);
   transform-origin: left;
-  transition: transform 800ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition-delay: 300ms;
 }
 
 .container p:hover::before {
   transform: scaleX(1);
+  transition-delay: 0ms;
 }
 
 .container p::after {
@@ -62,11 +64,12 @@ html, body {
   height: 50px;
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform 500ms ease-in-out 200ms;
+  transition: transform 500ms ease-in-out;
   display: grid;
   place-items: center;
 }
 
 .container p:hover::after {
   transform: scaleY(1);
+  transition-delay: 250ms;
 }
