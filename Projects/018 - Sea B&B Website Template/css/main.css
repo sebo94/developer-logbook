@@ -28,8 +28,6 @@ a {
 }
 
 .btn {
-  font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(86, 84, 81);
   color: rgb(243, 243, 243);
 }
@@ -42,7 +40,7 @@ header .flex-container {
 
 header {
   background: rgba(255, 234, 218, 1);
-  height: 25vh;
+  min-height: 25vh;
   position: relative;
 }
 
@@ -203,9 +201,6 @@ header {
   text-align: center;
   padding: 0.1em 2.9em;
   color: #2b2a28;
-  font-weight: 500;
-  font-size: 0.85em;
-  line-height: 1.4em;
   font: normal normal normal 13px/1.4em Signika, sans-serif;
 }
 
@@ -402,8 +397,14 @@ main.rooms #main__cards-list .card__body .card__text p.pricing {
 #activities__grid .activity {
   width: 286px;
   height: 248px;
-  background-color: rgb(153,159,166);
+  background-color: rgb(153, 159, 166);
   color: white;
+  transition: opacity 0.4 ease-in;
+  cursor: pointer;
+}
+
+#activities__grid .activity:hover img {
+  opacity: 0.5;
 }
 
 #activities__grid .activity .activity__img img {
@@ -415,15 +416,68 @@ main.rooms #main__cards-list .card__body .card__text p.pricing {
   height: 70%;
 }
 
-#activities__grid .activity h3.activity__title, p.activity__description {
+#activities__grid .activity h3.activity__title,
+p.activity__description {
   margin: 0;
   padding: 5px;
-  font: normal normal normal 25px/1.4em Signika,sans-serif;
+  font: normal normal normal 25px/1.4em Signika, sans-serif;
 }
 
 #activities__grid p.activity__description {
   font-size: 12px;
   padding-bottom: 100px;
+}
+
+/* --- ABOUT --- */
+#about__img {
+  height: 400px !important;
+  width: 290px !important;
+  margin-bottom: 80px;
+  float: left;
+}
+
+.about__text {
+  margin-left: 320px;
+}
+
+.about__text p:not(.text) {
+  line-height: 1.5em;
+  font-family: Signika, sans-serif;
+  margin-bottom: 20px;
+}
+
+p.text {
+  margin: 20px 0;
+}
+
+/* --- CONTACT --- */
+#contact__grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+#contact__grid .contact__left h3 {
+  margin-top: 0;
+}
+
+#contact__grid .contact__right form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact__grid .contact__right * {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form .btn {
+  display: inline-block;
+  width: 150px  ;
+  align-self: flex-end;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* --- MEDIA QUERIES --- */
