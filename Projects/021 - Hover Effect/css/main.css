@@ -1,0 +1,72 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.container {
+  height: 400px;
+  width: 780px;
+  background: url(../img/1.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 0.8;
+}
+
+.container p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 40px;
+  cursor: pointer;
+  transition: color 400ms ease-in-out;
+}
+
+.container p:hover {
+  color: black;
+}
+
+.container p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 300px;
+  background-color: yellow;
+  z-index: -1;
+  transform: scaleX(0.1);
+  transform-origin: left;
+  transition: transform 800ms ease-in-out;
+}
+
+.container p:hover::before {
+  transform: scaleX(1);
+}
+
+.container p::after {
+  content: 'I was hidden';
+  position: absolute;
+  top: 30px;
+  right: 0;
+  left: 40px;
+  background-color: red;
+  color: white;
+  width: 96%;
+  height: 50px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 500ms ease-in-out 200ms;
+  display: grid;
+  place-items: center;
+}
+
+.container p:hover::after {
+  transform: scaleY(1);
+}
