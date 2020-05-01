@@ -1,21 +1,8 @@
 img {
   max-width: 100%;
 }
-
 .col {
   padding: 1rem;
-}
-@media (min-width: 800px) {
-  .col {
-    width: 50%;
-    float: left;
-  }
-  .col:nth-of-type(2n + 1) {
-    clear: left;
-  }
-}
-.col.col--full {
-  width: 100%;
 }
 .main {
   overflow: hidden;

@@ -1,0 +1,26 @@
+.List {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Link {
+    display: inline-block;
+    padding: 20px;
+}
+
+.Link a {
+    text-decoration: none;
+    color: #555;
+}
+
+.Link a:hover {
+    color: orange;
+}
+
+.Link a:active {
+    text-decoration: underline;
+}
+
+
